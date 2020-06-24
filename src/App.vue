@@ -1,28 +1,53 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <el-container>
+    <el-header>
+      <Menu mode="horizontal"  :theme="theme1">
+        <MenuItem name="1" to="/">
+          <Icon type="md-home"/>
+          主選單
+        </MenuItem>
+        <MenuItem name="2" to="config">
+          <Icon type="ios-construct" />
+          系統設定
+        </MenuItem>
+      </Menu>
+    </el-header>
+    <el-main>
+      <router-view>
+      </router-view>
+    </el-main>
+  </el-container>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import Vue from 'vue'
+  import VueRouter from 'vue-router'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  Vue.use(VueRouter)
+
+
+  export default {
+    name: "App",
+
+
+    data: () => ({
+      currentActive:""
+    }),
+
+    methods: {
+      handleOpen(key, keyPath) {
+        console.log(key, keyPath);
+      },
+      handleClose(key, keyPath) {
+        console.log(key, keyPath);
+      }
+    },
+
+
+  };
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
+
 </style>

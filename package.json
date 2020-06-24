@@ -9,16 +9,26 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "electron": "^9.0.5",
     "vue": "^2.6.11"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.4.0",
     "@vue/cli-plugin-eslint": "~4.4.0",
     "@vue/cli-service": "~4.4.0",
+    "axios": "^0.19.2",
     "babel-eslint": "^10.1.0",
+    "element-ui": "^2.13.1",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
+    "iview": "^3.5.4",
+    "view-design": "^4.2.0",
+    "vue-axios": "^2.1.5",
+    "vue-material": "^1.0.0-beta-12",
+    "vue-router": "^3.3.4",
+    "vue-socket.io": "^3.0.7",
+    "vue-template-compiler": "^2.6.11",
+    "vuetify": "^2.2.25"
   },
   "eslintConfig": {
     "root": true,
