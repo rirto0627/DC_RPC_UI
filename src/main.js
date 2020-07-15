@@ -4,6 +4,8 @@ import App from './App.vue'
 import home from  './components/home'
 import config from './components/config'
 import introduce from "@/components/introduce";
+import account from "./components/login"
+import register from "./components/register"
 
 import VueMaterial from 'vue-material'
 import 'vue-material/dist/vue-material.min.css'
@@ -23,10 +25,13 @@ Vue.use(ElementUI);
 
 Vue.config.productionTip = false
 const router = new VueRouter({
+  mode:'history',
   routes: [
     {path: '/', component:home},
     {path:'/config',component: config},
-    {path:'/introduce',component: introduce}
+    {path:'/home',component: introduce},
+    {path:'/account',component: account},
+    {path:'/register',component: register}
   ]
 })
 

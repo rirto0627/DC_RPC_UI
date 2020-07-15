@@ -1,9 +1,23 @@
 <template>
-    <Card style="width:100%">
-        <div style="text-align:center">
-            <img src="../image/bg2.jpg">
-        </div>
-    </Card>
+    <div id="introduce">
+        <h1>介紹</h1>
+        <h2>開發人員：</h2>
+        <Row>
+            <i-Col span="11">
+                <Card>
+                    <p slot="title">熊兒</p>
+                    <img style="position: absolute;right:20px;top:40px" width="130px" src="https://i.imgur.com/XQJUIKd.jpg"/>
+                    <p>聯繫方式：<p>
+                    <p style="color: steelblue">Discord:</p>
+                    <p>熊兒#8304</p>
+                    <p style="color: #42b983">LINE:</p>
+                    <p>0981813705</p>
+                    <p style="color: #ff5800;">伺服器群組：</p>
+                    <a>https://discord.com/invite/Q5ruvyK</a>
+                </Card>
+            </i-Col>
+        </Row>
+    </div>
 </template>
 
 <script>
@@ -13,18 +27,14 @@
 </script>
 
 <style>
-    .el-main{
-        padding-bottom:0;
-        padding-top:0;
-        padding-right:0;
-        padding-left:0;
-
-
+    #introduce {
+        color: #ffffff;
+        padding: 10px;
     }
-    img{
-        width: 100%;
-        height: 100%;
-        object-fit:cover;
+    .ivu-card-body{
+        color: #2b2b2b;
     }
-
+    .ivu-row{
+        width: 700px;
+    }
 </style>
